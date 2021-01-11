@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" data-aos="zoom-in">
         <div id="logo">
             <img src="icon1.jpg" alt="MyOnlineFood.com">
         </div>
@@ -19,27 +20,30 @@
             <li class="item"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
-    <section id="home">
-        <h1 class="h-primary">Welcome to MyOnlineFood</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur debitis corporis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur debitis corporis.</p>
+    <section id="home" >
+        <h1 class="h-primary" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">Welcome to MyOnlineFood</h1>
+        <p data-aos="fade-up"
+        data-aos-anchor-placement="top-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur debitis corporis.</p>
+        <p data-aos="fade-up"
+        data-aos-anchor-placement="top-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consequatur debitis corporis.</p>
         <button class="btn">Order Now</button>
     </section>
 
     <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
-            <div class="box">
+            <div class="box" data-aos="fade-right">
                 <img src="img/1.png" alt="">
                 <h2 class="h-secondary center">Food Ordering</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sint nobis? Similique, neque perspiciatis corrupti incidunt fugit error distinctio voluptatum voluptatem veritatis nihil. Sed perferendis temporibus eligendi, nostrum ex provident ducimus cum dicta culpa?</p>
             </div>
-            <div class="box">
+            <div class="box" data-aos="zoom-in-down">
                 <img src="img/2.png" alt="">
                 <h2 class="h-secondary center">Faster Delivery</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sint nobis? Similique, neque perspiciatis corrupti incidunt fugit error distinctio voluptatum voluptatem veritatis nihil. Sed perferendis temporibus eligendi, nostrum ex provident ducimus cum dicta culpa?</p>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-left">
                 <img src="img/3.png" alt="">
                 <h2 class="h-secondary center">Order Tracking</h2>
                 <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sint nobis? Similique, neque perspiciatis corrupti incidunt fugit error distinctio voluptatum voluptatem veritatis nihil. Sed perferendis temporibus eligendi, nostrum ex provident ducimus cum dicta culpa?</p>
@@ -49,23 +53,23 @@
     <section id="client-section">
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
-            <div class="client-item">
+            <div class="client-item" data-aos="fade-right">
                 <img src="img/logo1.png" alt="">
             </div>
-            <div class="client-item">
+            <div class="client-item" data-aos="fade-right">
                 <img src="img/logo2.png" alt="">
             </div>
-            <div class="client-item">
+            <div class="client-item" data-aos="fade-left">
                 <img src="img/logo3.png" alt="">
             </div>
-            <div class="client-item">
+            <div class="client-item" data-aos="fade-left">
                 <img src="img/logo4.png" alt="">
             </div>
         </div>
     </section>
     <section id="contact">
         <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
+        <div id="contact-box" data-aos="fade-down">
             <form action="">
                 <div class="form-group">
                     <label for="name">Name: </label>
@@ -92,5 +96,11 @@
             Copyright &copy; www.myOnlineMeal.com. All rights reserved!
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+      </script>
 </body>
 </html>
